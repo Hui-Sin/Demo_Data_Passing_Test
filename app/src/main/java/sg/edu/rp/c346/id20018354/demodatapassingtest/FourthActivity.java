@@ -13,7 +13,6 @@ public class FourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
         tvAnswer3=findViewById(R.id.textViewDoubleAns);
-        tvAnswer3 = findViewById(R.id.textViewIntAns);
         Intent intentReceived = getIntent();
         double doublevalue = intentReceived.getDoubleExtra("double", 0);
         tvAnswer3.setText("Double value received is: " + doublevalue);

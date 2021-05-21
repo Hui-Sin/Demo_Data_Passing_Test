@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         PassDouble.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-                intent.putExtra("double", "99.99");
+                Intent intent = new Intent(MainActivity.this, FourthActivity.class);
+                intent.putExtra("double", 99.99);
                 startActivity(intent);
             }
         });
