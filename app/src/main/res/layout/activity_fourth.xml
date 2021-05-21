@@ -6,7 +6,7 @@
 
 
     <TextView
-        android:id="@+id/textViewIntAns"
+        android:id="@+id/textViewDoubleAns"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />

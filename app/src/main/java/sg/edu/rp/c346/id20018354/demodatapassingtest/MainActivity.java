@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btnPassInteger;
     Button btnPassCharacter;
+    TextView PassDouble;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnPassInteger = findViewById(R.id.buttonPassInteger);
         btnPassCharacter=findViewById(R.id.buttonPassChar);
+        PassDouble=findViewById(R.id.textViewPassDouble);
         btnPassInteger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,9 +31,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-                intent.putExtra("char", "");
+                intent.putExtra("char", "a");
                 startActivity(intent);
             }
         });
+        PassDouble.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+                intent.putExtra("double", "99.99");
+                startActivity(intent);
+            }
+        });
+
     }
 }

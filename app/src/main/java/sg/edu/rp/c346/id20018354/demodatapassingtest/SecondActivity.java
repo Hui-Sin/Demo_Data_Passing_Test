@@ -12,7 +12,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        tvAnswer = findViewById(R.id.textView);
+        tvAnswer = findViewById(R.id.textViewIntAns);
         Intent intentReceived = getIntent();
         int value = intentReceived.getIntExtra("value", 0);
         tvAnswer.setText("Integer value received is: " + value);

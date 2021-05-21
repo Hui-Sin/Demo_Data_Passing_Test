@@ -12,7 +12,7 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-        tvAnswer2 = findViewById(R.id.textView2);
+        tvAnswer2 = findViewById(R.id.textViewCharAns);
         Intent intentReceived = getIntent();
         String character = intentReceived.getStringExtra("char");
         tvAnswer2.setText("Character value received is: " + character);
